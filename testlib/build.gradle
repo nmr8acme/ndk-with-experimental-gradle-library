@@ -1,0 +1,23 @@
+apply plugin: 'com.android.model.library'
+
+model {
+    android {
+        compileSdkVersion = 22
+        buildToolsVersion = "23.0.0 rc3"
+
+        defaultConfig.with {
+            minSdkVersion.apiLevel = 22
+        }
+    }
+
+    android.ndk {
+        moduleName = "test"
+        ldLibs += "log"
+    }
+
+    android.buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
+}
