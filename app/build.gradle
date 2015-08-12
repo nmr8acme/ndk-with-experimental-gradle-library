@@ -18,12 +18,6 @@ model {
         moduleName = "testapp"
         ldLibs += "log"
     }
-
-    android.buildTypes {
-        release {
-            isMinifyEnabled = false
-        }
-    }
 }
 
 dependencies {

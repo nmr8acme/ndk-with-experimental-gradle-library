@@ -14,10 +14,4 @@ model {
         moduleName = "test"
         ldLibs += "log"
     }
-
-    android.buildTypes {
-        release {
-            isMinifyEnabled = false
-        }
-    }
 }
